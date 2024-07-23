@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:projectapp/components/myTextField.dart';
 import 'package:projectapp/components/myButton.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key, required this.onTap});
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key, required this.onTap});
   final void Function()? onTap;
 
   @override 
-  State<LoginPage> createState() => LoginPageState();
+  State<RegisterPage> createState() => RegisterPageState();
 }
 
-class LoginPageState extends State<LoginPage> {
+class RegisterPageState extends State<RegisterPage> {
   // text controllers
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
 
-  // sign in function
-  void signIn() {}
+  // signup function
+  void signUp() {}
+
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +39,7 @@ class LoginPageState extends State<LoginPage> {
             child:
             Column(
               children: [
+              
               // email field
               myTextField(
                 controller: emailController,
@@ -55,20 +58,30 @@ class LoginPageState extends State<LoginPage> {
               
               const SizedBox(height: 20),
 
-              // signin button
+              // confirm password field
+              myTextField(
+                controller: confirmPasswordController,
+                hintText: 'Re-Enter Password', 
+                obscureText: true 
+              ),
+              
+              const SizedBox(height: 20),
+
+              // signup button
 
               myButton(
                 onTap: () {},
-                text: "Sign In",
+                text: "Sign Up",
               ),
 
               const SizedBox(height: 20),
 
-              // signup button
+              // login button
+
               GestureDetector(
               child: myButton(
                 onTap: widget.onTap,
-                text: "Sign Up",
+                text: "Log In",
               )
               ),
 
