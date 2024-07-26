@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projectapp/components/myTextField.dart';
 import 'package:projectapp/components/myButton.dart';
 
+// Page where users login
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key, required this.onTap});
   final void Function()? onTap;

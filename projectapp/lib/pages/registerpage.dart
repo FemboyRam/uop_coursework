@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projectapp/components/myTextField.dart';
 import 'package:projectapp/components/myButton.dart';
 
+// Page where users register
+
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key, required this.onTap});
   final void Function()? onTap;

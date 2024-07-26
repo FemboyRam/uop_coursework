@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Custom button widget, preset appearance, requires a string and a function
 
 class myButton extends StatelessWidget {
   final String text; 

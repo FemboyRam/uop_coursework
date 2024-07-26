@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Custom text input widget, preset appearance and options to obscure text, requires a controller, string and a boolean
 
 class myTextField extends StatelessWidget {
   final TextEditingController controller;
